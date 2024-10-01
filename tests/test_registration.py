@@ -12,7 +12,7 @@ class TestRegistration:
         driver.find_element(*Locators.REGISTRATION_BUTTON).click()
 
         driver.find_element(*Locators.REG_NAME_INPUT).send_keys('Кирилл')
-        driver.find_element(*Locators.REG_EMAIL_INPUT).send_keys('chizhevskiy_kirill_14_123@yandex.ru')
+        driver.find_element(*Locators.REG_EMAIL_INPUT).send_keys('chizhevskiy_kirill_14_953@yandex.ru')
         driver.find_element(*Locators.REG_PASSWORD_INPUT).send_keys('123123')
         driver.find_element(*Locators.REG_APPLY_BUTTON).click()
 
