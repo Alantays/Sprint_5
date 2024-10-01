@@ -25,7 +25,8 @@ class Locators:
     LOGIN_EMAIL_INPUT = (By.XPATH, "//input[@name='name']")  # Поле ввода email для входа
     LOGIN_PASSWORD_INPUT = (By.XPATH, "//input[@name='Пароль']")  # Поле ввода пароля для входа
     LOGIN_APPLY_BUTTON = (By.XPATH, "//button[contains(text(),'Войти')]")  # Кнопка "Войти"
-    REGISTRATION_BUTTON = (By.XPATH, "//a[contains(text(),'Зарегистрироваться')]")  # Кнопка "Зарегистрироваться" на странице входа
+    REGISTRATION_BUTTON = (
+        By.XPATH, "//a[contains(text(),'Зарегистрироваться')]")  # Кнопка "Зарегистрироваться" на странице входа
     RESET_PASSWORD_BUTTON = (By.XPATH, "//a[contains(text(),'Восстановить пароль')]")  # Кнопка "Восстановить пароль"
 
     # Страница восстановления пароля

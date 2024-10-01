@@ -2,7 +2,6 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
 from locators import Locators
 
 
@@ -21,4 +20,10 @@ def authorization(driver):
     driver.find_element(*Locators.LOGIN_APPLY_BUTTON).click()
     WebDriverWait(driver, 10).until(
         EC.url_to_be("https://stellarburgers.nomoreparties.site/"))
+    return driver
+
+
+@pytest.fixture(scope="function")
+def homepage(driver):
+    driver.get('https://stellarburgers.nomoreparties.site/')
     return driver

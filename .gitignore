@@ -3050,3 +3050,5 @@ venv/Scripts/pip3.exe
 venv/Scripts/python.exe
 venv/Scripts/pythonw.exe
 venv/Scripts/wsdump.exe
+tests/__pycache__/test_constructor.cpython-310-pytest-8.3.3.pyc
+tests/__pycache__/test_login.cpython-310-pytest-8.3.3.pyc
