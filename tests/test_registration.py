@@ -4,7 +4,7 @@ from locators import Locators
 
 class TestRegistration:
 
-    def test_registration(self, driver):
+    def test_registration_successful(self, driver):
         driver.get("https://stellarburgers.nomoreparties.site/")
 
         driver.find_element(*Locators.LOGIN_BUTTON).click()
