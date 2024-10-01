@@ -27,3 +27,14 @@ class TestPersonalAccount:
         )
         driver.find_element(*Locators.LOGO).click()
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
+
+    def test_logout_from_personal_account(self, driver, authorization):
+        driver.find_element(*Locators.PERSONAL_ACCOUNT_BUTTON).click()
+        WebDriverWait(driver, 10).until(
+            EC.url_to_be("https://stellarburgers.nomoreparties.site/account/profile")
+        )
+        driver.find_element(*Locators.LOGOUT_BUTTON).click()
+        WebDriverWait(driver, 10).until(
+            EC.url_to_be("https://stellarburgers.nomoreparties.site/login")
+        )
+        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/login'
