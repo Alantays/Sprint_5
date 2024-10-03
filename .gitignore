@@ -156,3 +156,11 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
+.idea/
+__pycache__/conftest.cpython-310-pytest-8.3.3.pyc
+__pycache__/locators.cpython-310.pyc
+tests/__pycache__/test_registration.cpython-310-pytest-8.3.3.pyc
+venv/pyvenv.cfg
+venv/lib/
+venv/Scripts/
+*.pyc
